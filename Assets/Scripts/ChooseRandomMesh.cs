@@ -9,12 +9,8 @@ public class ChooseRandomMesh : MonoBehaviour
     {
         MeshRenderer[] meshRenderers = GetComponentsInChildren<MeshRenderer> (true);
         MeshRenderer selectedMeshRenderer;
-        Debug.Log (meshRenderers);
         selectedMeshRenderer = meshRenderers [Random.Range (0, meshRenderers.Length)];
-        Debug.Log (selectedMeshRenderer);
-        Debug.Log (selectedMeshRenderer.enabled);
         selectedMeshRenderer.enabled = true;
-        Debug.Log (selectedMeshRenderer.enabled);
     }
 	
 
